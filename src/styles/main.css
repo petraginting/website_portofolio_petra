@@ -557,6 +557,7 @@ body {
 
 .profile-img-wrapper:hover img {
   filter: grayscale(0%) contrast(1.1);
+  animation: none;
 }
 
 .profile-img-wrapper:hover::before {
@@ -586,6 +587,10 @@ body {
   80% { transform: translate(-3px, 3px); }
   100% { transform: translate(0); }
 }
+
+
+
+
 
 /* div.stats-grid */
 .stats-grid {
