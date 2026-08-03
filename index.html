@@ -1,443 +1,411 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio Petra Ginting - Fullstack Developer"
-    />
-    <link rel="icon" type="image/png" href="/images/logopetra.png" />
-    <title>Petra Ginting - Portofolio</title>
-    <link rel="stylesheet" href="/src/styles/critical.css" />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="app">
-      <!-- loading screen -->
-      <div id="loader">
-        <div class="ui-abstergo">
-          <div class="abstergo-loader">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-          <div class="ui-text">
-            Loading Portfolio
-            <div class="ui-dot"></div>
-            <div class="ui-dot"></div>
-            <div class="ui-dot"></div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio Petra Ginting - Fullstack Developer" />
+  <link rel="icon" type="image/png" href="/images/logopetra.png" />
+  <title>Petra Ginting - Portofolio</title>
+  <link rel="stylesheet" href="/src/styles/critical.css" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <!-- loading screen -->
+    <div id="loader">
+      <div class="ui-abstergo">
+        <div class="abstergo-loader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="ui-text">
+          Loading Portfolio
+          <div class="ui-dot"></div>
+          <div class="ui-dot"></div>
+          <div class="ui-dot"></div>
         </div>
       </div>
-
-      <!-- ===================================
-      HEADER SECTION
-      =================================== -->
-      <header class="nav-container">
-        <nav class="navbar">
-          <a href="#" class="nav-logo" aria-label="Home">
-            <img src="/images/logopetra.png" alt="Logo Petra Ginting" />
-            <span>Petra<span>Ginting</span></span>
-          </a>
-          <ul class="navigation mobile-menu">
-            <li class="navigation-btn"><a href="#home">Home</a></li>
-            <li class="navigation-btn"><a href="#about">About</a></li>
-            <li class="navigation-btn"><a href="#skill">Skill</a></li>
-            <li class="navigation-btn"><a href="#projects">Projects</a></li>
-            <li class="navigation-btn contact-mobile">
-              <a href="#contact">Contact Me</a>
-            </li>
-          </ul>
-          <button class="btn-cta" type="button">Contact Me</button>
-          <button class="hamburger" type="button" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </nav>
-      </header>
-
-      <!-- ===================================
-      MAIN SECTION
-      =================================== -->
-      <main>
-        <!-- HERO SECTION -->
-        <section id="home" class="hero">
-          <canvas id="bg" aria-label="3D Background Animation"></canvas>
-          <div class="hero-content">
-            <h1 id="typing-text"></h1>
-            <p class="hero-subtitle">
-              <span>Building the future</span>, one line of code at a time 🚀
-            </p>
-            <div class="hero-buttons">
-              <a href="#projects" class="btn-primary">View Projects</a>
-              <a href="#contact" class="btn-secondary">Get in Touch</a>
-            </div>
-            <div class="scroll-indicator">
-              <a href="#about"><span>Scroll Down</span></a>
-              <div class="arrow-down">↓</div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="page-section">
-          <div class="container">
-            <h2>About Me</h2>
-            <div class="intro-about">
-              <!-- DIUBAH: img dipindah keluar dari about-content, sejajar dengannya -->
-              <img src="/images/porto.jpeg" alt="Foto Petra Ginting" />
-              <!-- about-content dan img sejajar -->
-              <div class="about-content">
-                <p>
-                  Perkenalkan saya Petra Priadi Septino Pralim Ginting. Saya
-                  adalah seorang mahasiswa Teknik Informatika di Telkom
-                  University. Saya mahasiswa Informatika yang hobi mengubah
-                  desain mockup menjadi website yang interaktif dan responsif.
-                  Fokus utama saya adalah membangun antarmuka pengguna yang
-                  bersih menggunakan React.js dan Tailwind CSS. Saya sangat
-                  memperhatikan performa web dan memastikan setiap elemen
-                  memberikan pengalaman terbaik bagi pengguna.
-                </p>
-                <div class="stats-grid">
-                  <div class="stat-card">
-                    <h4>50+</h4>
-                    <p>Project Selesai</p>
-                  </div>
-                  <div class="stat-card">
-                    <h4>5+</h4>
-                    <p>Tahun Pengalaman</p>
-                  </div>
-                  <div class="stat-card">
-                    <h4>30+</h4>
-                    <p>Klien Puas</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- SKILL SECTION -->
-        <section id="skill" class="page-section">
-          <div class="container">
-            <h2>Keahlian Saya</h2>
-            <div class="skills-grid">
-              <div class="skill-card">
-                <div class="skill-icon">🎨</div>
-                <h3>Frontend Development</h3>
-                <ul class="skill-list">
-                  <li>HTML5 & CSS3</li>
-                  <li>JavaScript (ES6+)</li>
-                  <li>React.js & Vue.js</li>
-                  <li>Tailwind CSS</li>
-                  <li>Responsive Design</li>
-                </ul>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon">⚙️</div>
-                <h3>Backend Development</h3>
-                <ul class="skill-list">
-                  <li>Node.js & Express</li>
-                  <li>Python & Django</li>
-                  <li>PHP & Laravel</li>
-                  <li>RESTful API</li>
-                  <li>GraphQL</li>
-                </ul>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon">💾</div>
-                <h3>Database & Tools</h3>
-                <ul class="skill-list">
-                  <li>MySQL & PostgreSQL</li>
-                  <li>MongoDB</li>
-                  <li>Git & GitHub</li>
-                  <li>Docker</li>
-                  <li>AWS & Heroku</li>
-                </ul>
-              </div>
-              <div class="skill-card">
-                <div class="skill-icon">📱</div>
-                <h3>Mobile & Other</h3>
-                <ul class="skill-list">
-                  <li>React Native</li>
-                  <li>Flutter</li>
-                  <li>Progressive Web Apps</li>
-                  <li>Git Version Control</li>
-                  <li>Agile & Scrum</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="page-section">
-          <div class="container">
-            <h2>Project Terbaru</h2>
-            <div class="projects-grid">
-              <div class="project-card">
-                <div class="project-image">
-                  <div class="project-icon">🛒</div>
-                </div>
-                <div class="project-info">
-                  <h3>E-Commerce Platform</h3>
-                  <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">MongoDB</span>
-                  </div>
-                  <p class="project-description">
-                    Platform e-commerce full-featured dengan sistem pembayaran
-                    terintegrasi dan analytics.
-                  </p>
-                  <div class="project-links">
-                    <a href="#" class="project-link">Live Demo →</a>
-                    <a href="#" class="project-link">GitHub →</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <div class="project-icon">📊</div>
-                </div>
-                <div class="project-info">
-                  <h3>Analytics Dashboard</h3>
-                  <div class="project-tags">
-                    <span class="tag">Vue.js</span>
-                    <span class="tag">D3.js</span>
-                    <span class="tag">Python</span>
-                  </div>
-                  <p class="project-description">
-                    Dashboard interaktif untuk visualisasi data bisnis dengan
-                    grafik real-time.
-                  </p>
-                  <div class="project-links">
-                    <a href="#" class="project-link">Live Demo →</a>
-                    <a href="#" class="project-link">GitHub →</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <div class="project-icon">💬</div>
-                </div>
-                <div class="project-info">
-                  <h3>Chat Application</h3>
-                  <div class="project-tags">
-                    <span class="tag">Socket.io</span>
-                    <span class="tag">React</span>
-                    <span class="tag">Express</span>
-                  </div>
-                  <p class="project-description">
-                    Aplikasi chat real-time dengan fitur grup chat dan video
-                    call.
-                  </p>
-                  <div class="project-links">
-                    <a href="#" class="project-link">Live Demo →</a>
-                    <a href="#" class="project-link">GitHub →</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <div class="project-icon">🎓</div>
-                </div>
-                <div class="project-info">
-                  <h3>Learning Management System</h3>
-                  <div class="project-tags">
-                    <span class="tag">Next.js</span>
-                    <span class="tag">Laravel</span>
-                    <span class="tag">MySQL</span>
-                  </div>
-                  <p class="project-description">
-                    Platform e-learning dengan video streaming dan quizzes
-                    interaktif.
-                  </p>
-                  <div class="project-links">
-                    <a href="#" class="project-link">Live Demo →</a>
-                    <a href="#" class="project-link">GitHub →</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <div class="project-icon">🏠</div>
-                </div>
-                <div class="project-info">
-                  <h3>Property Marketplace</h3>
-                  <div class="project-tags">
-                    <span class="tag">React</span>
-                    <span class="tag">Three.js</span>
-                    <span class="tag">Node.js</span>
-                  </div>
-                  <p class="project-description">
-                    Platform marketplace properti dengan virtual tour 360°.
-                  </p>
-                  <div class="project-links">
-                    <a href="#" class="project-link">Live Demo →</a>
-                    <a href="#" class="project-link">GitHub →</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-card">
-                <div class="project-image">
-                  <div class="project-icon">🍔</div>
-                </div>
-                <div class="project-info">
-                  <h3>Food Delivery App</h3>
-                  <div class="project-tags">
-                    <span class="tag">React Native</span>
-                    <span class="tag">Firebase</span>
-                    <span class="tag">Redux</span>
-                  </div>
-                  <p class="project-description">
-                    Mobile-first food delivery dengan real-time tracking.
-                  </p>
-                  <div class="project-links">
-                    <a href="#" class="project-link">Live Demo →</a>
-                    <a href="#" class="project-link">GitHub →</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="page-section">
-          <div class="container">
-            <h2>Mari Bekerja Sama</h2>
-            <div class="contact-wrapper">
-              <div class="contact-info">
-                <h3>Let's Create Something Amazing</h3>
-                <p>
-                  Punya project atau ide yang ingin diwujudkan? Jangan ragu
-                  untuk menghubungi saya.
-                </p>
-                <div class="contact-methods">
-                  <div class="contact-method">
-                    <span class="method-icon">📧</span>
-                    <div>
-                      <h4>Email</h4>
-                      <a href="mailto:petra@example.com"
-                        >petra.ginting@email.com</a
-                      >
-                    </div>
-                  </div>
-                  <div class="contact-method">
-                    <span class="method-icon">📱</span>
-                    <div>
-                      <h4>Phone</h4>
-                      <a href="tel:+62123456789">+62 812 3456 7890</a>
-                    </div>
-                  </div>
-                  <div class="contact-method">
-                    <span class="method-icon">📍</span>
-                    <div>
-                      <h4>Location</h4>
-                      <p>Jakarta, Indonesia</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="contact-form">
-                <form id="contactForm">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      placeholder=" "
-                    />
-                    <label for="name">Your Name</label>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      placeholder=" "
-                    />
-                    <label for="email">Your Email</label>
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      required
-                      placeholder=" "
-                    />
-                    <label for="subject">Subject</label>
-                  </div>
-                  <div class="form-group">
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="5"
-                      required
-                      placeholder=" "
-                    ></textarea>
-                    <label for="message">Your Message</label>
-                  </div>
-                  <button type="submit" class="submit-btn">
-                    <span>Send Message</span>
-                    <span>→</span>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- ===================================
-      FOOTER
-      =================================== -->
-      <footer class="footer">
-        <div class="social-links">
-          <a href="#" class="social-link"
-            ><img src="/icons/instagram.png" alt="Instagram"
-          /></a>
-          <a href="#" class="social-link"
-            ><img src="/icons/github.png" alt="GitHub"
-          /></a>
-          <a href="#" class="social-link"
-            ><img src="/icons/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="#" class="social-link"
-            ><img src="/icons/telegram.png" alt="Telegram"
-          /></a>
-        </div>
-        <div class="container">
-          <p>&copy; 2026 Petra Ginting</p>
-        </div>
-      </footer>
-
-      <!-- Scroll Ke Atas -->
-      <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
-        <span>↑</span>
-      </button>
     </div>
 
     <!-- ===================================
+      HEADER SECTION
+      =================================== -->
+    <header class="nav-container">
+      <nav class="navbar">
+        <a href="#" class="nav-logo" aria-label="Home">
+          <img src="/images/logopetra.png" alt="Logo Petra Ginting" />
+          <span>Petra<span>Ginting</span></span>
+        </a>
+        <ul class="navigation mobile-menu">
+          <li class="navigation-btn"><a href="#home">Home</a></li>
+          <li class="navigation-btn"><a href="#about">About</a></li>
+          <li class="navigation-btn"><a href="#skill">Skill</a></li>
+          <li class="navigation-btn"><a href="#projects">Projects</a></li>
+          <li class="navigation-btn contact-mobile">
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+        <a href="#contact" class="btn-cta">Contact Me</a>
+        <button class="hamburger" type="button" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ===================================
+      MAIN SECTION
+      =================================== -->
+    <main>
+      <!-- HERO SECTION -->
+      <section id="home" class="hero">
+        <canvas id="bg" aria-label="3D Background Animation"></canvas>
+        <div class="hero-content">
+          <h1 id="typing-text"></h1>
+          <p class="hero-subtitle">
+            <span>Building the future</span>, one line of code at a time 🚀
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
+          </div>
+          <div class="scroll-indicator">
+            <a href="#about"><span>Scroll Down</span></a>
+            <div class="arrow-down">↓</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="page-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="intro-about">
+            <!-- DIUBAH: img dipindah keluar dari about-content, sejajar dengannya -->
+            <div class="profile-img-wrapper">
+              <img src="/images/porto.jpeg" alt="Foto Petra Ginting" />
+            </div>
+            <!-- about-content dan img sejajar -->
+            <div class="about-content">
+              <p>
+                Hallo sob, aku Petra Priadi Septino Pralim Ginting. Aku
+                adalah seorang mahasiswa Teknik Informatika di Telkom
+                University. Aku mahasiswa Informatika yang hobi mengubah
+                desain mockup menjadi website yang interaktif dan responsif.
+                Fokus utama saya adalah membangun antarmuka pengguna yang
+                bersih menggunakan React.js dan Tailwind CSS. Aku sangat
+                memperhatikan performa web dan memastikan setiap elemen
+                memberikan pengalaman terbaik bagi pengguna.
+              </p>
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <h4>3+</h4>
+                  <p>Project Selesai</p>
+                </div>
+                <div class="stat-card">
+                  <h4>5</h4>
+                  <p>Bahasa Pemrograman</p>
+                  <small>JS, PHP, Python, C++, Go</small>
+                </div>
+                <div class="stat-card">
+                  <h4>10+</h4>
+                  <p>Repository Github</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILL SECTION -->
+      <section id="skill" class="page-section">
+        <div class="container">
+          <h2>Keahl Aku</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🎨</div>
+              <h3>Frontend Development</h3>
+              <ul class="skill-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js & Vue.js</li>
+                <li>Tailwind CSS</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">⚙️</div>
+              <h3>Backend Development</h3>
+              <ul class="skill-list">
+                <li>Node.js & Express</li>
+                <li>Python & Django</li>
+                <li>PHP & Laravel</li>
+                <li>RESTful API</li>
+                <li>GraphQL</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">💾</div>
+              <h3>Database & Tools</h3>
+              <ul class="skill-list">
+                <li>MySQL & PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Git & GitHub</li>
+                <li>Docker</li>
+                <li>AWS & Heroku</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">📱</div>
+              <h3>Mobile & Other</h3>
+              <ul class="skill-list">
+                <li>React Native</li>
+                <li>Flutter</li>
+                <li>Progressive Web Apps</li>
+                <li>Git Version Control</li>
+                <li>Agile & Scrum</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="page-section">
+        <div class="container">
+          <h2>Project Terbaru</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-icon">🛒</div>
+              </div>
+              <div class="project-info">
+                <h3>E-Commerce Platform</h3>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Node.js</span>
+                  <span class="tag">MongoDB</span>
+                </div>
+                <p class="project-description">
+                  Platform e-commerce full-featured dengan sistem pembayaran
+                  terintegrasi dan analytics.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo →</a>
+                  <a href="#" class="project-link">GitHub →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-icon">📊</div>
+              </div>
+              <div class="project-info">
+                <h3>Analytics Dashboard</h3>
+                <div class="project-tags">
+                  <span class="tag">Vue.js</span>
+                  <span class="tag">D3.js</span>
+                  <span class="tag">Python</span>
+                </div>
+                <p class="project-description">
+                  Dashboard interaktif untuk visualisasi data bisnis dengan
+                  grafik real-time.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo →</a>
+                  <a href="#" class="project-link">GitHub →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-icon">💬</div>
+              </div>
+              <div class="project-info">
+                <h3>Chat Application</h3>
+                <div class="project-tags">
+                  <span class="tag">Socket.io</span>
+                  <span class="tag">React</span>
+                  <span class="tag">Express</span>
+                </div>
+                <p class="project-description">
+                  Aplikasi chat real-time dengan fitur grup chat dan video
+                  call.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo →</a>
+                  <a href="#" class="project-link">GitHub →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-icon">🎓</div>
+              </div>
+              <div class="project-info">
+                <h3>Learning Management System</h3>
+                <div class="project-tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Laravel</span>
+                  <span class="tag">MySQL</span>
+                </div>
+                <p class="project-description">
+                  Platform e-learning dengan video streaming dan quizzes
+                  interaktif.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo →</a>
+                  <a href="#" class="project-link">GitHub →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-icon">🏠</div>
+              </div>
+              <div class="project-info">
+                <h3>Property Marketplace</h3>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Three.js</span>
+                  <span class="tag">Node.js</span>
+                </div>
+                <p class="project-description">
+                  Platform marketplace properti dengan virtual tour 360°.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo →</a>
+                  <a href="#" class="project-link">GitHub →</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-icon">🍔</div>
+              </div>
+              <div class="project-info">
+                <h3>Food Delivery App</h3>
+                <div class="project-tags">
+                  <span class="tag">React Native</span>
+                  <span class="tag">Firebase</span>
+                  <span class="tag">Redux</span>
+                </div>
+                <p class="project-description">
+                  Mobile-first food delivery dengan real-time tracking.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="project-link">Live Demo →</a>
+                  <a href="#" class="project-link">GitHub →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="page-section">
+        <div class="container">
+          <h2>Mari Bekerja Sama</h2>
+          <div class="contact-wrapper">
+            <div class="contact-info">
+              <h3>Let's Create Something Amazing</h3>
+              <p>
+                Punya project atau ide yang ingin diwujudkan? Jangan ragu
+                untuk menghubungi saya.
+              </p>
+              <div class="contact-methods">
+                <div class="contact-method">
+                  <span class="method-icon">📧</span>
+                  <div>
+                    <h4>Email</h4>
+                    <a href="mailto:petra@example.com">petra.ginting@email.com</a>
+                  </div>
+                </div>
+                <div class="contact-method">
+                  <span class="method-icon">📱</span>
+                  <div>
+                    <h4>Phone</h4>
+                    <a href="tel:+62123456789">+62 812 3456 7890</a>
+                  </div>
+                </div>
+                <div class="contact-method">
+                  <span class="method-icon">📍</span>
+                  <div>
+                    <h4>Location</h4>
+                    <p>Jakarta, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" required placeholder=" " />
+                  <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" required placeholder=" " />
+                  <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="subject" name="subject" required placeholder=" " />
+                  <label for="subject">Subject</label>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                  <span>Send Message</span>
+                  <span>→</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================================
+      FOOTER
+      =================================== -->
+    <footer class="footer">
+      <div class="social-links">
+        <a href="#" class="social-link"><img src="/icons/instagram.png" alt="Instagram" /></a>
+        <a href="#" class="social-link"><img src="/icons/github.png" alt="GitHub" /></a>
+        <a href="#" class="social-link"><img src="/icons/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#" class="social-link"><img src="/icons/telegram.png" alt="Telegram" /></a>
+      </div>
+      <div class="container">
+        <p>&copy; 2026 Petra Ginting</p>
+      </div>
+    </footer>
+
+    <!-- Scroll Ke Atas -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+      <span>↑</span>
+    </button>
+  </div>
+
+  <!-- ===================================
     SCRIPTS
     =================================== -->
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

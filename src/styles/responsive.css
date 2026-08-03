@@ -214,6 +214,22 @@
   .container p {
     font-size: 0.95rem;
   }
+
+  .intro-about {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .profile-img-wrapper {
+    width: 250px;
+    height: 300px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 /* ===================================
@@ -261,19 +277,4 @@
   }
 }
 
-.intro-about {
-  display: flex;
-  padding: 10px 20px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
 
-.intro-about img {
-  height: 300px;
-  border-radius: 50px;
-}
-
-.intro-about p {
-  text-align: justify;
-}
