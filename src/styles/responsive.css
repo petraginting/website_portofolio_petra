@@ -4,7 +4,8 @@
 #app {
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden; /* Mencegah horizontal scroll di mobile */
+  overflow-x: hidden;
+  /* Mencegah horizontal scroll di mobile */
   position: relative;
 }
 
@@ -105,7 +106,7 @@
   }
 
   .navigation-btn a:hover {
-    color: #f91e1e;
+    color: var(--color-red);
   }
 
   .hamburger {
@@ -150,14 +151,12 @@
     top: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      #f91e1e,
-      #fff,
-      #f91e1e,
-      rgba(255, 255, 255, 0)
-    );
+    background: linear-gradient(to right,
+        rgba(255, 255, 255, 0),
+        var(--color-red),
+        #fff,
+        var(--color-red),
+        rgba(255, 255, 255, 0));
     background-size: 50% 100%;
     animation: animationGradient 3s linear infinite;
   }
@@ -177,12 +176,12 @@
 
   /* Hover Effect */
   .contact-mobile a:hover {
-    box-shadow: 0 0 20px rgba(249, 30, 30, 0.4);
-    color: #f91e1e;
+    box-shadow: 0 0 20px rgba(var(--color-red-rgb), 0.4);
+    color: var(--color-red);
   }
 
   .contact-mobile a:hover::after {
-    background: #0a0a0a;
+    background: var(--color-black);
   }
 
   .hero-content {
@@ -276,5 +275,3 @@
     line-height: 1.6;
   }
 }
-
-

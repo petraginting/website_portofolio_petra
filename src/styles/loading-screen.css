@@ -3,8 +3,8 @@
    =================================== */
 /* From Uiverse.io by Galahhad */
 .ui-abstergo {
-  --primary: #f91e1e;
-  --secondary: rgba(249, 30, 30, 0.3);
+  --primary: var(--color-red);
+  --secondary: rgba(var(--color-red-rgb), 0.3);
   --shadow-blur: 5px;
   --text-shadow-blur: 3px;
   --animation-duration: 0.9s;

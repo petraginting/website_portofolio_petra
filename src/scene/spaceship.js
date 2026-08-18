@@ -1,13 +1,19 @@
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 
 let spaceship = null;
 let mixer = null;
 
 export function loadSpaceship(scene) {
+  const dracoLoader = new DRACOLoader();
+  dracoLoader.setDecoderPath("https://www.gstatic.com/draco/versioned/decoders/1.5.6/");
+  
   const loader = new GLTFLoader();
+  loader.setDRACOLoader(dracoLoader);
+  
   loader.load(
-    "/models/spaceship.glb",
+    "/models/spaceship-draco.glb",
     (gltf) => {
       spaceship = gltf.scene;
 

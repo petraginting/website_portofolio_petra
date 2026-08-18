@@ -16,14 +16,17 @@ import { isMobile } from "./utils/device.js";
 
 import { initLoadingScreen } from "./ui/loadingScreen.js";
 import { initTypewriter } from "./ui/typewriter.js";
-import { initHamburgerMenu } from "./ui/navigation.js";
+import { initHamburgerMenu, initScrollToTop } from "./ui/navigation.js";
 import { initContactForm } from "./ui/contactForm.js";
+import { initCarousel } from "./ui/carousel.js";
 
 // UI
 initLoadingScreen();
 initTypewriter();
 initHamburgerMenu();
+initScrollToTop();
 initContactForm();
+initCarousel();
 
 // 3D scene
 addLights(scene);
