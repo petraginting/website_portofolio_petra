@@ -9,22 +9,22 @@
 }
 
 :root {
-  --color-red-rgb: 249, 30, 30;
-  --color-black-rgb: 10, 10, 10;
-  --color-white-rgb: 255, 255, 255;
-  --color-red: #f91e1e;
-  --color-black: #0a0a0a;
-  --color-white: #ffffff;
+  --color-red-rgb: 230, 57, 70;
+  --color-black-rgb: 15, 15, 20;
+  --color-white-rgb: 250, 250, 250;
+  --color-red: #e63946;
+  --color-black: #0f0f14;
+  --color-white: #fafafa;
   --color-gray: #0000;
-  --color-light-gray: #cccccc;
+  --color-light-gray: #a8b2d1;
 
   --radius-sm: 8px;
-  --radius-md: 15px;
-  --radius-lg: 20px;
-  --radius-xl: 30px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
 
   --transition-fast: 0.2s ease;
-  --transition-normal: 0.3s ease;
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html,
@@ -41,6 +41,7 @@ textarea {
 p {
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
+  line-height: 1.7;
 }
 
 /* Hide scrollbar */
@@ -378,7 +379,8 @@ body {
 
 .btn-primary,
 .btn-secondary {
-  padding: 1rem 2.5rem;
+  padding: 1rem 0;
+  width: 220px;
   font-weight: 700;
   font-size: 1.1rem;
   background-color: transparent !important;
@@ -786,56 +788,29 @@ body {
   gap: 1rem;
 }
 
-/* Shared 3D Dog Tag Card Style */
+/* Shared Solid Dark Card Style */
 .stat-card,
 .skill-card,
 .project-info,
 .contact-method,
 .contact-form {
   position: relative;
-  background-color: #333333;
+  background-color: #1e1e23;
   color: var(--color-white);
   border-radius: var(--radius-md);
-  /* Metallic Beveled Edge for Dark Silver */
-  border: 1px solid #3f424c;
-  border-top: 2px solid #707482;
-  border-left: 2px solid #5a5d6a;
-  border-bottom: 2px solid #25272e;
-  border-right: 2px solid #3f424c;
-  /* Extra 3D Neumorphic Pop */
-  box-shadow:
-    12px 12px 24px rgba(0, 0, 0, 0.85),
-    -6px -6px 16px rgba(255, 255, 255, 0.04),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.2),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: all var(--transition-normal);
   z-index: 1;
 }
 
-/* Embossed Line & Screws (Dog Tag Detail) */
+/* Remove dog tag screws */
 .stat-card::before,
 .skill-card::before,
 .project-info::before,
 .contact-method::before,
 .contact-form::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  bottom: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5), inset 0 0 3px rgba(255, 255, 255, 0.1);
-  border-radius: calc(var(--radius-md) - 6px);
-  pointer-events: none;
-  z-index: 0;
-
-  /* Metallic Screws on 4 corners */
-  background-image:
-    radial-gradient(circle at 8px 8px, #707482 1px, #3f424c 2px, #1a1a20 3px, transparent 4px),
-    radial-gradient(circle at calc(100% - 8px) 8px, #707482 1px, #3f424c 2px, #1a1a20 3px, transparent 4px),
-    radial-gradient(circle at 8px calc(100% - 8px), #707482 1px, #3f424c 2px, #1a1a20 3px, transparent 4px),
-    radial-gradient(circle at calc(100% - 8px) calc(100% - 8px), #707482 1px, #3f424c 2px, #1a1a20 3px, transparent 4px);
+  display: none;
 }
 
 /* Project Info specific */
@@ -855,14 +830,9 @@ body {
 }
 
 .stat-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  border-color: var(--color-red);
-  box-shadow:
-    16px 16px 32px rgba(0, 0, 0, 0.9),
-    -8px -8px 20px rgba(255, 255, 255, 0.05),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.08),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.6),
-    0 10px 30px rgba(var(--color-red-rgb), 0.3);
+  transform: translateY(-5px);
+  border-color: rgba(var(--color-red-rgb), 0.5);
+  box-shadow: 0 12px 40px rgba(var(--color-red-rgb), 0.15);
 }
 
 .stat-card h4 {
@@ -915,14 +885,9 @@ body {
 }
 
 .skill-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  border-color: var(--color-red);
-  box-shadow:
-    16px 16px 32px rgba(0, 0, 0, 0.9),
-    -8px -8px 20px rgba(255, 255, 255, 0.05),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.08),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.6),
-    0 15px 40px rgba(var(--color-red-rgb), 0.2);
+  transform: translateY(-5px);
+  border-color: rgba(var(--color-red-rgb), 0.5);
+  box-shadow: 0 12px 40px rgba(var(--color-red-rgb), 0.15);
 }
 
 /* div.skill-icon */
@@ -1407,14 +1372,9 @@ i[data-lucide] {
 }
 
 .contact-method:hover {
-  transform: translateY(-5px) scale(1.02);
-  border-color: var(--color-red);
-  box-shadow:
-    16px 16px 32px rgba(0, 0, 0, 0.9),
-    -8px -8px 20px rgba(255, 255, 255, 0.05),
-    inset 2px 2px 4px rgba(255, 255, 255, 0.08),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.6),
-    0 10px 30px rgba(var(--color-red-rgb), 0.15);
+  transform: translateY(-5px);
+  border-color: rgba(var(--color-red-rgb), 0.5);
+  box-shadow: 0 12px 40px rgba(var(--color-red-rgb), 0.15);
 }
 
 /* span.method-icon */
@@ -1494,7 +1454,7 @@ i[data-lucide] {
   width: 100%;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.2);
-  border: 2px solid rgba(var(--color-red-rgb), 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-sm);
   color: var(--color-white);
   font-size: 1rem;
@@ -1531,7 +1491,7 @@ i[data-lucide] {
   left: 0.8rem;
   font-size: 0.8rem;
   color: var(--color-red);
-  background: #333333;
+  background: #1e1e23;
   /* matches card bg */
   padding: 0 0.4rem;
 }
